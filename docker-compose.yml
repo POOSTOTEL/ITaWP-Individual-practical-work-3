@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: phpunit-app
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+      - ./php.ini:/usr/local/etc/php/conf.d/custom.ini
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data
+      - APACHE_LOG_DIR=/var/log/apache2
+    networks:
+      - app-network
+  php-cli:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: phpunit-cli
+    command: tail -f /dev/null
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

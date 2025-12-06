@@ -1,0 +1,16 @@
+=== Лог развертывания ===
+Дата: Sat, Dec  6, 2025 10:06:47 PM
+Пользователь: Lenovo
+Система: MINGW64_NT-10.0-19045 DESKTOP-LK6T4GU 3.6.3-7674c51e.x86_64 2025-07-01 09:13 UTC x86_64 Msys
+Docker версия: Docker version 20.10.13, build a224086
+Docker Compose версия: Docker Compose version v2.32.4-desktop.1
+Статус: УСПЕШНО
+========================
+=== Лог развертывания ===
+Дата: Sat, Dec  6, 2025 10:16:39 PM
+Пользователь: Lenovo
+Система: MINGW64_NT-10.0-19045 DESKTOP-LK6T4GU 3.6.3-7674c51e.x86_64 2025-07-01 09:13 UTC x86_64 Msys
+Docker версия: Docker version 20.10.13, build a224086
+Docker Compose версия: Docker Compose version v2.32.4-desktop.1
+Статус: УСПЕШНО
+========================
